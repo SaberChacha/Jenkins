@@ -11,5 +11,11 @@ pipeline {
       }
     }
 
+    stage('Mail Notification') {
+      steps {
+        mail(subject: 'Github Push', body: 'project pushed succesfuly', to: 'bibitovic@gmail.com')
+      }
+    }
+
   }
 }
