@@ -39,16 +39,21 @@ pipeline {
     }
 
     stage('Deployment') {
-      steps {
+      when{  
+        branch 'master'
+    steps {
         bat 'gradle publish'
       }
     }
+    }
 
     stage('Slack Notification') {
+      when{
+        branch 'master'
       steps {
         slackSend(baseUrl: 'https://hooks.slack.com/services/', channel: '#tpjenkins', message: 'Your project have been pushed', token: 'TTEL350CD/BTEL54WCV/gejWBlQQJMqed0P3GgtsTT35', teamDomain: 'tpjenkinsgroup')
       }
     }
-
+    }
   }
 }
