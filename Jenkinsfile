@@ -44,5 +44,11 @@ pipeline {
       }
     }
 
+    stage('Slack Notification') {
+      steps {
+        slackSend(baseUrl: 'https://hooks.slack.com/services/', channel: '#tpjenkins', message: 'Your project have been pushed', token: 'TTEL350CD/BTEL54WCV/gejWBlQQJMqed0P3GgtsTT35', teamDomain: 'tpjenkinsgroup')
+      }
+    }
+
   }
 }
