@@ -1,0 +1,9 @@
+-classpath 'C:\\Users\\WarDaddy\\Desktop\\Jenkins\\build\\classes\\java\\main;C:\\Users\\WarDaddy\\Desktop\\Jenkins\\build\\resources\\main'
+-d 'C:\\Users\\WarDaddy\\Desktop\\Jenkins\\build\\docs\\javadoc'
+-doctitle 'example 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'example 1.0-SNAPSHOT API'
+'C:\\Users\\WarDaddy\\Desktop\\Jenkins\\src\\main\\java\\com\\exception\\NoSquareException.java'
+'C:\\Users\\WarDaddy\\Desktop\\Jenkins\\src\\main\\java\\com\\model\\Matrix.java'
+'C:\\Users\\WarDaddy\\Desktop\\Jenkins\\src\\main\\java\\com\\service\\MatrixMathematics.java'
